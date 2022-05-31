@@ -1,0 +1,252 @@
+---
+title: "Utilisation de la surveillance syndromique pour la détection précoce de maladies émergentes"
+format: 
+  revealjs:
+    aspectratio: 16:9
+    slide-number: true
+    incremental: true
+    standalone: true
+editor: visual
+author: Aurélien Madouasse
+date: 31 mai 2022
+---
+
+# Les maladies infectieuses émergentes
+
+## Qu'est ce qu'une maladie émergente ?
+
+-   Définit par l'OIE[^1] comme *une nouvelle apparition, chez un animal, d'une maladie, d'une infection ou d'une infestation ayant des répercussions significatives sur la santé animale ou humaine et résultant : de la modification d'un agent pathogène connu ou de sa propagation à une nouvelle aire géographique ou à une nouvelle espèce; ou d'un agent pathogène non identifié antérieurement ou d'une maladie diagnostiquée pour la première fois.*
+
+[^1]: <https://www.oie.int/fr/ce-que-nous-faisons/normes/codes-et-manuels/acces-en-ligne-au-code-terrestre/?id=169&L=1&htmfile=glossaire.htm#terme_maladie_emergente>
+
+## Pourquoi se préoccuper des maladies émergentes ?
+
+-   Nombreux exemples récents :
+    -   **Humains** : VIH, Ebola, SARS-COV1, SARS-COV2, MERS
+
+    -   **Porcs :** peste porcine africaine
+
+    -   **Volailles** : influenza aviaire
+
+    -   **Bovins** : encéphalopathie spongiforme bovine, pancytopénie néonatale bovine, fièvre catarrhale ovine, infection par le virus de Schmallenberg
+
+## Augmentation récente du risque d'émergences
+
+-   déforestation ou chasse $\rightarrow$ contacts plus fréquents avec la faune sauvage
+
+-   changement de pratiques agricoles $\rightarrow$ modifications d'écosystèmes
+
+-   changement climatique $\rightarrow$ modifications des aires de répartition des vecteurs
+
+::: aside
+[Jones et al., 2008](https://www.nature.com/articles/nature06536), [Jones et al., 2013](https://www.pnas.org/doi/abs/10.1073/pnas.1208059110)
+:::
+
+## Augmentation récente du risque d'émergences
+
+-   intensification de l'élevage $\rightarrow$ augmentation des densités animales
+
+-   échanges internationaux $\rightarrow$ diffusion de pathogènes et de vecteurs
+
+::: aside
+[Jones et al., 2008](https://www.nature.com/articles/nature06536), [Jones et al., 2013](https://www.pnas.org/doi/abs/10.1073/pnas.1208059110)
+:::
+
+# Enjeux autour de la détection des maladies émergentes
+
+## Enjeux n°1 : précocité de la détection
+
+-   Si la maladie est grave, elle finira par être détectée !
+
+-   Important de détecter précocement pour :
+
+    -   faciliter le contrôle de la propagation
+
+    -   limiter l'ampleur des conséquences
+
+## Enjeux n°2 : une détection non spécifique
+
+-   Souvent, on ne sait pas ce qui va émerger $\rightarrow$ pas possible de rechercher un agent pathogène spécifique
+
+-   Une détection non spécifique :
+
+    -   repose sur la détection de signaux anormaux associés à la maladie émergente
+
+    -   les signaux détectés devront être analysés pour en identifier la cause
+
+## Enjeux n°3 : une détection spécifique
+
+-   La détection d'une anomalie donne lieu à des investigations
+
+-   Pour infirmer / confirmer les alertes, un nombre élevé de fausses alertes induit :
+
+    -   augmentation des coûts
+    -   démotivation des acteurs
+
+# Surveillance syndromique
+
+## Qu'est-ce que la surveillance syndromique ?
+
+Collecte, analyse et interprétation en temps (quasi-)réel de données pour la détection précoce de troubles de santé.
+
+-   L'objectif est donc de détecter des signaux :
+
+    -   associés à la maladie
+    -   qui n'en soient pas trop spécifiques car on ne sait pas forcément ce qu'on cherche
+    -   qui soient suffisamment spécifiques pour éviter un nombre trop élevé de fausses alertes
+
+## Etapes de conception d'un dispositif de surveillance
+
+1.  Hypothèses sur le type de maladies pouvant émerger et leurs conséquences
+
+2.  Identification de sources de données
+
+3.  Construction d'indicateurs à partir des données disponibles
+
+4.  Développement de méthodes de détection d'anomalie
+
+5.  Évaluation du dispositif sur données réelles ou simulées
+
+## Application de la surveillance syndromique à la détection de l'émergence de maladies à transmission vectorielle chez les bovins
+
+## Exemple chez les bovins laitiers
+
+-   Projet de recherche conduit à BIOEPAR en 2011-2012 sur **l'évaluation des données de production laitière et de reproduction pour la détection de maladies à transmission vectorielle émergentes chez les bovins laitiers, avec application à l'émergence de la FCO**
+
+-   Objectifs :
+
+    -   construction d'indicateurs à partir de données collectées en routine
+
+    -   développement de méthodes
+
+## Emergence de la FCO
+
+::: columns
+::: {.column width="65%"}
+![](figures/pioz2011.png)
+:::
+
+::: {.column width="35%"}
+![](figures/pioz2011a.png)
+
+[Pioz et al. (2011)](https://veterinaryresearch.biomedcentral.com/articles/10.1186/1297-9716-42-60), *Predicted date of first clinical case occurrence of BT.*
+:::
+:::
+
+## Conséquences possibles d'une infection virale émergente
+
+-   Signes cliniques divers
+
+-   Mortalités
+
+-   **Baisses de production (laitière, croissance)**
+
+-   **Impacts sur la reproduction : infertilité, avortements**
+
+## Sources de données
+
+-   Nombreuses données collectées en routine chez les bovins laitiers
+
+    -   Mouvements : naissances, transactions, mortalités
+
+    -   Reproduction : inséminations artificielles
+
+    -   Contrôle laitier : productions et composition du lait niveau vache, une fois par mois dans les élevages participants
+
+## Exemple de la reproduction
+
+::: nonincremental
+-   Des hypothèses aux indicateurs - [Marceau et al. ( 2014)](https://www.sciencedirect.com/science/article/pii/S002203021400513X)
+
+![](figures/repro_indicateurs.png){height="500"}
+:::
+
+## Exemple de la reproduction
+
+-   Pour chaque indicateur :
+
+    -   Calcul de la valeur hebdomadaire d'indicateur par département (numérateur / dénominateur)
+
+    -   Modélisation de la valeur attendue sur une période historique (régression harmonique)
+
+    -   Sur les semaines où risque d'émergence, analyse des différences entre valeurs observées et attendues (algorithme Cusum)
+
+    -   Production d'alertes si différences *anormales* (seuil)
+
+## Exemple de la reproduction
+
+::: nonincremental
+-   Indicateur de gestations courtes
+
+![](figures/repro_resultats1.png){height="300"}
+:::
+
+-   Augmentation de la proportion de gestations raccourcies de quelques jours lors de l'émergence de la FCO en 2007
+
+## Exemple de la reproduction
+
+::: nonincremental
+-   Variations des valeurs d'indicateurs pendant l'émergence
+
+::: columns
+::: {.column width="65%"}
+![](figures/repro_resultats.png){height="500"}
+:::
+
+::: {.column width="35%"}
+![](figures/repro_indicateurs.png){height="350"}
+:::
+:::
+:::
+
+## Résultats pour la production laitière
+
+![](figures/lait_resultats.png){height="300"}
+
+-   Baisses de production laitière concomitante aux notifications de cas
+
+-   Beaucoup de fausses alertes
+
+::: aside
+[Madouasse et al. (2014)](https://www.sciencedirect.com/science/article/pii/S0167587713003929)
+:::
+
+## Résultats répliqués aux Pays-Bas
+
+::: nonincremental
+-   Indicateurs de reproduction associés aux émergences des virus de la FCO et de Schmallenberg ([Veldhuis et al. (2016)](https://www.sciencedirect.com/science/article/pii/S0167587715300969))
+
+![](figures/Veldhuis2016.png)
+:::
+
+# Bilan
+
+## Intérêts de la surveillance syndromique
+
+-   Approche intéressante pour détecter des phénomènes anormaux lorsqu'on ne sait pas précisément ce que l'on cherche
+
+-   Si le système est bien conçu, la remontée et l'analyse des données sont automatisées
+
+-   Le traitement des alertes requiert une action humaine
+
+## Maintenir l'implications des acteurs de la suveillance
+
+-   Les émergences sont des évènements extrêmement rares :
+
+    -   Comment conserver l'implication des acteurs quand il ne se passe rien ? $\rightarrow$ production d'indicateurs supplémentaires d'intérêt pour les acteurs de la filière (exemple : [OMAR](https://www.plateforme-esa.fr/page/thematique-omar-observatoire-de-la-mortalite-des-animaux-de-rente))
+
+    -   Même avec une bonne spécificité, il est probable que la plupart des alertes seront des faux positifs (valeur prédictive positive faible)
+
+## La donnée comme bien commun
+
+-   Les données collectées auprès de milliers d'acteurs acquièrent une valeur pour la collectivité qui dépend du fait que ces acteurs les partagent
+
+    -   Ces données peuvent avoir une valeur marchande, réelle ou perçue, qui fait que ceux qui les détiennent sont réticents à les partager
+
+    -   Enjeux éthiques et juridiques (parfois flous) autour de la propriété des données
+
+# Merci pour votre attention
+
+::: footer
+aurelien.madouasse\@oniris-nantes.fr
+:::
